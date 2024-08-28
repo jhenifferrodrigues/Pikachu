@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+:root{
+    --primary-color: #de2323;
+    --secundary-color: rgb(224, 173, 173);
+}
+body{
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding-inline: 64px;
+    font-family: "Righteous", sans-serif;
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+}
+header div{
+    display: flex;
+    gap: 16px;
+}
+header a{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-size: 24px;
+    height: 100%;
+    color: var(--secundary-color);
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.title{
+    text-align: center;
+    position: relative;
+}
+.conteiner{
+    height: 200px;
+    z-index:1;
+    display: flex;
+}
+.title h1{
+    font-size: 20vw;
+    color: white;
+    
+}
+.title span{
+    font-size: 25vw;
+    color: white;
+    position: absolute;
+    opacity: 0.3;
+    top: -40%;
+    left:0;
+}
+footer{
+    color: var(--secundary-color);
+    height: 50px;
+    font-style: italic;
+    text-align: center;
+}
+.description{
+    width: 50%;
+    color: var --secundary-color;
+}
+.description h2{
+    font-size: 64px;
+}
+.description p{
+    font-size: 20px;
+    width: 500px;
+
+}
+.action{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action a{
+    background-color: var(--secundary-color);
+    height: 100px;
+    width: 400px;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.infernape-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 45vw;
+}
